@@ -1,0 +1,25 @@
+### GET ALl TODOS
+
+GET http://localhost:3000/todos
+
+
+### CREATE A NEW TODO
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+      "title": "Learn System Design", 
+      "content": "The goal is to learn System Design to design the infrastructure of my application"
+}
+
+### UPDATE TODO
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+      "title": "Learn Microservices", 
+      "content": "The goal is to learn Microservices to have my application build in different services"
+}
+
+### DELETE
+DELETE  http://localhost:3000/todos/1
